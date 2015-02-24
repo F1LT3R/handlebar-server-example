@@ -4,9 +4,9 @@ module.exports = function(grunt) {
     clean: ['dest'],
 
     'compile-handlebars': {
-      build_html: {
-        template: 'src/html/**/*.html',
-        templateData: 'src/json/**/*.json',
+      layout: {
+        template: 'src/layout/index.html',
+        templateData: 'src/**/*.json',
         handlebars: 'node_modules/handlebars',
         output: 'dest/*.html',
       }
